@@ -7,7 +7,6 @@ const rootDir = require('../utils/path');
 const products = [];
 
 router.get('/products/create', (req, res, next) => {
-    // res.sendFile(path.join(rootDir, 'views', 'admin', 'products', 'create.pug'))
     res.render('admin/products/create', {
         docTitle: 'Add Product',
         path: '/admin/products/create',
